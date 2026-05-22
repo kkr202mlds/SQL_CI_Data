@@ -1,7 +1,13 @@
 # SQL_CI_Data
 ### SQL Continuous Integration  Pipeline – Database Change Management with Automated Testing
 
+---
+
+Aim
+
 - Treat database schema and reference data the same way as application code: version-controlled, automatically tested, and deployed via CI/CD.
+
+---
 
 #### Technology Used
 
@@ -14,9 +20,10 @@ Test framework | pgTAP (SQL unit tests), Python/Pytest (integration)
 Scripting | Bash, Python
 Optional app layer | Python Flask / Node.js (to demonstrate full CI)
 
+---
 
 #### Project Structure
-'''
+```
 sql-ci-project/
 ├── .github/
 │   └── workflows/
@@ -36,7 +43,8 @@ sql-ci-project/
 ├── flyway.conf                     # Flyway configuration (without credentials)
 ├── requirements.txt                # Python deps (if used)
 └── README.md
-'''
+```
+---
 
 #### CI Pipeline Steps
 
