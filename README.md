@@ -62,7 +62,7 @@ The pipeline runs on every push/PR and does:
 
 #### Detailed Implementation
 
-4.1. Version-Controlled Migrations (Flyway)
+Version-Controlled Migrations (Flyway)
 
 File: migrations/V1__create_users_table.sql
 
@@ -80,7 +80,7 @@ File: migrations/V2__add_email_to_users.sql
 ALTER TABLE users ADD COLUMN email VARCHAR(255);
 ```
 
-4.2. Automated SQL Tests with pgTAP
+Automated SQL Tests with pgTAP
 
 Install pgTAP in the test container. Example test file test/sql/users_tests.sql:
 
@@ -97,7 +97,7 @@ ROLLBACK;
 
 Run with: pg_prove -d $DATABASE_URL test/sql/*.sql
 
-4.3. CI Workflow (GitHub Actions)
+CI Workflow (GitHub Actions)
 
 .github/workflows/ci.yml:
 
@@ -162,7 +162,7 @@ jobs:
         run: pytest test/integration/ -v
 ```
 
-4.4. Integration Test Example (Python)
+#### Integration Test Example (Python)
 
 test/integration/test_database.py:
 
@@ -182,7 +182,7 @@ def test_users_table_exists():
 
 ---
 
-✅ 5. What This Project Achieves
+#### What This Project Achieves
 
 · Auditable database history: every schema change is a Git commit.
 · Pre-merge validation: no broken SQL reaches main.
@@ -192,7 +192,7 @@ def test_users_table_exists():
 
 ---
 
-🚀 6. Extensions & Variations
+#### Extensions & Variations
 
 · Replace Flyway with Liquibase (XML/YAML/JSON changelogs).
 · Use GitLab CI instead of GitHub Actions – same pattern, different syntax.
@@ -202,16 +202,16 @@ def test_users_table_exists():
 
 ---
 
-📦 7. Quick Start (Local Simulation)
+## Testing Code
 
 ```bash
-# Start test database
+### Start test database
 docker run --name pg-test -e POSTGRES_USER=test -e POSTGRES_PASSWORD=test -e POSTGRES_DB=testdb -p 5432:5432 -d postgres:15
 
-# Migrate
+### Migrate
 flyway -url=jdbc:postgresql://localhost:5432/testdb -user=test -password=test -locations=filesystem:migrations migrate
 
-# Run SQL tests
+## Run SQL tests
 pg_prove -h localhost -U test -d testdb test/sql/*.sql
 ```
 
