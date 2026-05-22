@@ -12,15 +12,19 @@
 
 #### Technology Used
 
-| Area | Tool Service |
-| Database | PostgreSQL (easily replaceable) | 
+### 🛠️ Tech Stack & Tools
 
-| Migration tool | Flyway (or Liquibase)
-Version control | Git + GitHub
-CI platform | GitHub Actions
-Test framework | pgTAP (SQL unit tests), Python/Pytest (integration)
-Scripting | Bash, Python
-Optional app layer | Python Flask / Node.js (to demonstrate full CI)
+
+| Area | Tool / Service |
+| :--- | :--- |
+| **Database** | [PostgreSQL](https://postgresql.org) *(easily replaceable)* |
+| **Migration tool** | [Flyway](https://flywaydb.org) (or [Liquibase](https://liquibase.org)) |
+| **Version control** | [Git](https://git-scm.com) + [GitHub](https://github.com/) |
+| **CI platform** | [GitHub Actions](https://github.com) |
+| **Test framework** | `pgTAP` (SQL unit tests), `Python/Pytest` (integration) |
+| **Scripting** | Bash, Python |
+| **Optional app layer** | [Python Flask](https://palletsprojects.com) / [Node.js](https://nodejs.org) *(to demonstrate full CI)* |
+
 
 ---
 
