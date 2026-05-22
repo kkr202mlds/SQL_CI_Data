@@ -80,7 +80,7 @@ File: migrations/V2__add_email_to_users.sql
 ALTER TABLE users ADD COLUMN email VARCHAR(255);
 ```
 
-Automated SQL Tests with pgTAP
+##### Automated SQL Tests with pgTAP
 
 Install pgTAP in the test container. Example test file test/sql/users_tests.sql:
 
