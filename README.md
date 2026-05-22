@@ -12,9 +12,6 @@
 
 #### Technology Used
 
-### 🛠️ Tech Stack & Tools
-
-
 | Area | Tool / Service |
 | :--- | :--- |
 | **Database** | [PostgreSQL](https://postgresql.org) *(easily replaceable)* |
