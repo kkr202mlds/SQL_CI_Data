@@ -12,8 +12,8 @@
 
 #### Technology Used
 
-Area | Tool / Service
-Database | PostgreSQL (easily replaceable)
+|Area | Tool / Service
+|Database | PostgreSQL (easily replaceable)
 Migration tool | Flyway (or Liquibase)
 Version control | Git + GitHub
 CI platform | GitHub Actions
