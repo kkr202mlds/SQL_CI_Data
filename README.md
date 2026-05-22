@@ -184,21 +184,21 @@ def test_users_table_exists():
 
 #### What This Project Achieves
 
-· Auditable database history: every schema change is a Git commit.
-· Pre-merge validation: no broken SQL reaches main.
-· Automated rollbacks: Flyway’s undo migrations can be tested in CI.
-· Shift-left on data integrity: SQL tests catch logic errors before deployment.
-· Dev parity: developers spin up the same DB locally via docker compose up + migration.
+- Auditable database history: every schema change is a Git commit.
+- Pre-merge validation: no broken SQL reaches main.
+- Automated rollbacks: Flyway’s undo migrations can be tested in CI.
+- Shift-left on data integrity: SQL tests catch logic errors before deployment.
+- Dev parity: developers spin up the same DB locally via docker compose up + migration.
 
 ---
 
 #### Extensions & Variations
 
-· Replace Flyway with Liquibase (XML/YAML/JSON changelogs).
-· Use GitLab CI instead of GitHub Actions – same pattern, different syntax.
-· Add static analysis (e.g., sqlfluff linting) as a CI step.
-· Deploy to a staging environment after CI passes (CD part).
-· Include data seeding and verify reference data integrity.
+- Replace Flyway with Liquibase (XML/YAML/JSON changelogs).
+- Use GitLab CI instead of GitHub Actions – same pattern, different syntax.
+- Add static analysis (e.g., sqlfluff linting) as a CI step.
+- Deploy to a staging environment after CI passes (CD part).
+- Include data seeding and verify reference data integrity.
 
 ---
 
