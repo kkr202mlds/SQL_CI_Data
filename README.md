@@ -97,7 +97,7 @@ ROLLBACK;
 
 Run with: pg_prove -d $DATABASE_URL test/sql/*.sql
 
-##### CI Workflow (GitHub Actions)
+#### CI Workflow (GitHub Actions)
 
 .github/workflows/ci.yml:
 
