@@ -1,9 +1,10 @@
 # SQL_CI_Data
+
 ### SQL Continuous Integration  Pipeline – Database Change Management with Automated Testing
 
 ---
 
-Aim
+#### Aim
 
 - Treat database schema and reference data the same way as application code: version-controlled, automatically tested, and deployed via CI/CD.
 
