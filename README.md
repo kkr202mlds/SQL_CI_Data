@@ -12,7 +12,7 @@
 
 #### Technology Used
 
-|Area | Tool / Service
+| Area | Tool / Service
 |Database | PostgreSQL (easily replaceable)
 Migration tool | Flyway (or Liquibase)
 Version control | Git + GitHub
