@@ -53,12 +53,12 @@ sql-ci-project/
 
 The pipeline runs on every push/PR and does:
 
-- 1. Spin up an ephemeral PostgreSQL instance (Docker container).
-- 2. Checkout code.
-- 3. Run Flyway migrations against the temporary database.
-- 4. Execute SQL unit tests with pgTAP.
-- 5. Execute integration tests (Python app connecting to DB, verifying schema).
-- 6. Clean up (destroy container).
+1. Spin up an ephemeral PostgreSQL instance (Docker container).
+2. Checkout code.
+3. Run Flyway migrations against the temporary database.
+4. Execute SQL unit tests with pgTAP.
+5. Execute integration tests (Python app connecting to DB, verifying schema).
+6. Clean up (destroy container).
 
 #### Detailed Implementation
 
